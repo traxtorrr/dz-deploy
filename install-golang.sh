@@ -23,7 +23,9 @@ rm $GO_TAR
 {
   echo ''
   echo '# Go environment'
-  echo 'export PATH=$PATH:/usr/local/go/bin'
+  echo 'export GOROOT=/usr/local/go'
+  echo 'export GOPATH=$HOME/go'
+  echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin'
 } >> ~/.bashrc
 
 # Reload bashrc
