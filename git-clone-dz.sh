@@ -4,7 +4,8 @@
 GIT_REPO_SSH_URL="git@gitlab-ce.arv.co.th:cloud_arv/arv-core/deepzoom_product/deepzoom.git"
 
 # Optional: directory name (default to repo name if not set)
-TARGET_DIR="$HOME"
+REPO_NAME=$(basename -s .git "$GIT_REPO_SSH_URL")
+TARGET_DIR="$HOME/$REPO_NAME"
 
 # Extract repo name from SSH URL if TARGET_DIR is empty
 if [ -z "$TARGET_DIR" ]; then
