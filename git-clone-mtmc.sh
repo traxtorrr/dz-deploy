@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set your GitLab SSH URL here
-GIT_REPO_SSH_URL="ggit@gitlab-ce.arv.co.th:cloud_arv/arv-core/arv-ai/yami-no-reteru/or-multicamera-humandetection.git"
+GIT_REPO_SSH_URL="git@gitlab-ce.arv.co.th:cloud_arv/arv-core/arv-ai/yami-no-reteru/or-multicamera-humandetection.git"
 
 # Optional: directory name (default to repo name if not set)
 REPO_NAME=$(basename -s .git "$GIT_REPO_SSH_URL")
